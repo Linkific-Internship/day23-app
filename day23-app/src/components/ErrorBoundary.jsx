@@ -16,8 +16,8 @@ class ErrorBoundary extends React.Component {
     if (this.state.hasError) {
       return (
         <div style={{ padding: '20px', color: 'red' }}>
-          <h2>Kuch galat ho gaya!</h2>
-          <p>Page load nahi ho saka.</p>
+          <h2>Something Went Wrong</h2>
+          <p>The page cannot be loaded</p>
         </div>
       )
     }
