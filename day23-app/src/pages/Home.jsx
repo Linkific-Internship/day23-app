@@ -22,10 +22,10 @@ function Home() {
 
             const json = await res.json()
             setData(json)
-            setToast({ message: 'Data load ho gaya!', type: 'success' })
+            setToast({ message: 'data loaded!', type: 'success' })
         } catch (error) {
             setError(error.message)
-            setToast({ message: 'Kuch galat ho gaya!', type: 'error' })
+            setToast({ message: 'Something Went Wrong!', type: 'error' })
         } finally {
             setLoading(false)
         }
